@@ -11,11 +11,11 @@
 
 <body>
   <header class="max-w-7xl mx-auto px-4 py-8 pt-3">
-    <div class="flex items-center justify-between gap-20 xl:gap-8">
+    <div class="flex items-center justify-between gap-1 xl:gap-8">
       <div>
         <img src="./images/uzum-logo.svg" alt="logo" class="w-60 h-8">
       </div>
-      <div class="hidden md:block">
+      <div>
         <div class="flex gap-2">
           <button class="flex text-pe bg-bg rounded py-2 px-6">
             <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,8 +43,9 @@
             Katalog
           </button>
           <div class="flex">
-            <input class="w-full xl:w-96 py-3 px-4" type="search" placeholder="Mahsulotlar va turkumlar izlash">
-            <button class="bg-gray-100 py-2 px-7">
+            <input class="w-full xl:w-96 hidden lg:block py-3 px-4" type="search"
+              placeholder="Mahsulotlar va turkumlar izlash">
+            <button class="bg-gray-100 hidden lg:block py-2 px-7">
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M16.0726 11.2198C16.0726 13.9812 13.834 16.2198 11.0726 16.2198C8.31121 16.2198 6.07263 13.9812 6.07263 11.2198C6.07263 8.45843 8.31121 6.21985 11.0726 6.21985C13.834 6.21985 16.0726 8.45843 16.0726 11.2198ZM14.9124 16.4649C13.8366 17.2539 12.509 17.7198 11.0726 17.7198C7.48278 17.7198 4.57263 14.8097 4.57263 11.2198C4.57263 7.63 7.48278 4.71985 11.0726 4.71985C14.6625 4.71985 17.5726 7.63 17.5726 11.2198C17.5726 12.6562 17.1067 13.9838 16.3177 15.0596L20.2816 19.0234C20.6696 19.4115 20.6696 20.0407 20.2816 20.4288C19.8935 20.8168 19.2643 20.8168 18.8762 20.4288L14.9124 16.4649Z"
@@ -87,7 +88,24 @@
       </div>
       <img src="/public/images/menu-icon.png" alt="menu" class="cursor-pointer w-8 md:hidden">
     </div>
+    <form>
+      <div class="block lg:hidden mt-4 relative">
+        <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-3">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+          </svg>
+        </div>
+        <input type="search" id="search"
+          class="block w-full py-3 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50  dark:placeholder-gray-400 dark:text-black"
+          placeholder="Search" required />
+      </div>
+    </form>
+
   </header>
+  <div>
+  </div>
 </body>
 
 </html>
